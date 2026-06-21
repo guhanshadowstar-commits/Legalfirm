@@ -260,7 +260,6 @@
     display:flex; align-items:center; justify-content:center; background:rgba(226,187,86,0.07);
   }
   .marker-icon svg{ width:22px; height:22px; stroke:var(--gold-bright); fill:none; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; }
-  .map-end .marker-icon svg{ fill:var(--gold-bright); }
 
   .map-stop{ position:relative; z-index:2; display:grid; grid-template-columns:64px 1fr; gap:24px; padding:10px 0 38px; }
   .pin-wrap{ display:flex; justify-content:center; padding-top:2px; }
@@ -586,14 +585,14 @@
       </div>
 
       <div class="section-head reveal">
-        <span class="eyebrow">How We Work</span>
+        <span class="eyebrow" style="color:var(--gold);">How We Work</span>
         <h2>Our process</h2>
       </div>
       <div class="process-map" style="margin-bottom:40px;">
         <div class="map-trail">
           <div class="map-marker map-start reveal">
             <div class="marker-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 5v3M12 16v3M5 12h3M16 12h3"/><path d="M12 9l1.6 3.4L17 14l-3.4 1.6L12 19l-1.6-3.4L7 14l3.4-1.6z"/></svg></div>
-            <span>Your matter begins here</span>
+            <span>Our process</span>
           </div>
 
           <div class="map-stop reveal">
@@ -609,11 +608,6 @@
           <div class="map-stop reveal">
             <div class="pin-wrap"><div class="map-pin"><span>03</span></div></div>
             <div class="map-card"><h3>Opinion or representation</h3><p>A clear written opinion, or active representation before the relevant forum — in plain language.</p></div>
-          </div>
-
-          <div class="map-marker map-end reveal">
-            <div class="marker-icon"><svg viewBox="0 0 24 24"><line x1="5" y1="3" x2="5" y2="21"/><path d="M5 4h13l-3 4 3 4H5"/></svg></div>
-            <span>Resolution — X marks the spot</span>
           </div>
         </div>
       </div>
