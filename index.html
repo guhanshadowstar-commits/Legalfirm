@@ -237,7 +237,11 @@
   .card{ padding:34px 28px; transition:transform .25s var(--ease), border-color .25s; transform-style:preserve-3d; will-change:transform; }
   .card:hover{ border-color:var(--gold-dim); }
   .card .num{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--gold); letter-spacing:.08em; }
-  .card .big-num{ font-family:'Fraunces', serif; font-weight:300; font-size:2.6rem; color:var(--gold-bright); opacity:.5; line-height:1; margin:10px 0 18px; }
+  .card-icon{
+    display:block; width:40px; height:40px; margin:16px 0 18px;
+    color:var(--gold-bright); fill:none; stroke:currentColor; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round;
+    filter:drop-shadow(0 0 10px rgba(255,231,163,0.35));
+  }
   .card h3{ font-size:1.18rem; font-weight:500; margin-bottom:10px; }
   .card p{ font-size:16px; color:var(--ivory-dim); }
 
@@ -539,18 +543,18 @@
         <span class="eyebrow">What We Handle</span>
         <h2>Area of Practice</h2>
       </div>
-      <!-- TODO: replace the nine cards below with the exact list/wording from your reference image once shared -->
+      <!-- TODO: replace the ten cards below with the exact list/wording from your reference image once shared -->
       <div class="card-grid">
-        <div class="card glass reveal"><span class="num">01</span><div class="big-num">01</div><h3>Civil Litigation</h3><p>Representation and strategy across civil suits, recovery actions and injunctions.</p></div>
-        <div class="card glass reveal"><span class="num">02</span><div class="big-num">02</div><h3>Criminal Defence</h3><p>Bail, trial representation and defence across criminal proceedings.</p></div>
-        <div class="card glass reveal"><span class="num">03</span><div class="big-num">03</div><h3>Corporate &amp; Commercial Law</h3><p>Contract drafting, compliance, and advisory for businesses and start-ups.</p></div>
-        <div class="card glass reveal"><span class="num">04</span><div class="big-num">04</div><h3>Property &amp; Real Estate Law</h3><p>Title verification, sale deeds, and property dispute resolution.</p></div>
-        <div class="card glass reveal"><span class="num">05</span><div class="big-num">05</div><h3>Family &amp; Matrimonial Law</h3><p>Divorce, custody, maintenance and family settlement matters, handled with discretion.</p></div>
-        <div class="card glass reveal"><span class="num">06</span><div class="big-num">06</div><h3>Arbitration &amp; Mediation</h3><p>Out-of-court resolution for commercial and personal disputes.</p></div>
-        <div class="card glass reveal"><span class="num">07</span><div class="big-num">07</div><h3>Labour &amp; Employment Law</h3><p>Advisory and representation for employers and employees alike.</p></div>
-        <div class="card glass reveal"><span class="num">08</span><div class="big-num">08</div><h3>Banking &amp; Recovery Law</h3><p>Loan recovery, NPA matters and proceedings before debt recovery tribunals.</p></div>
-        <div class="card glass reveal"><span class="num">09</span><div class="big-num">09</div><h3>Intellectual Property Rights (IPR)</h3><p>Trademark, copyright and patent filing, protection and infringement disputes.</p></div>
-        <div class="card glass reveal"><span class="num">10</span><div class="big-num">10</div><h3>Consumer Protection</h3><p>Representation before consumer forums for goods, services and builder disputes.</p></div>
+        <div class="card glass reveal"><span class="num">01</span><svg class="card-icon" viewBox="0 0 24 24"><line x1="12" y1="3" x2="12" y2="19"/><circle cx="12" cy="4.5" r="1.3" fill="currentColor" stroke="none"/><path d="M5 8h6M13 8h6"/><path d="M3 8l2.5 5a2.5 2.5 0 0 0 5 0L8 8"/><path d="M13 8l2.5 5a2.5 2.5 0 0 0 5 0L18 8"/><path d="M7 21h10"/><path d="M12 19v2"/></svg><h3>Civil Litigation</h3><p>Representation and strategy across civil suits, recovery actions and injunctions.</p></div>
+        <div class="card glass reveal"><span class="num">02</span><svg class="card-icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg><h3>Criminal Defence</h3><p>Bail, trial representation and defence across criminal proceedings.</p></div>
+        <div class="card glass reveal"><span class="num">03</span><svg class="card-icon" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="11" rx="1.5"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/><line x1="3" y1="13.5" x2="21" y2="13.5"/></svg><h3>Corporate &amp; Commercial Law</h3><p>Contract drafting, compliance, and advisory for businesses and start-ups.</p></div>
+        <div class="card glass reveal"><span class="num">04</span><svg class="card-icon" viewBox="0 0 24 24"><path d="M4 21V10l8-6 8 6v11"/><path d="M9 21v-7h6v7"/></svg><h3>Property &amp; Real Estate Law</h3><p>Title verification, sale deeds, and property dispute resolution.</p></div>
+        <div class="card glass reveal"><span class="num">05</span><svg class="card-icon" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.4"/><circle cx="15" cy="9" r="3.4"/></svg><h3>Family &amp; Matrimonial Law</h3><p>Divorce, custody, maintenance and family settlement matters, handled with discretion.</p></div>
+        <div class="card glass reveal"><span class="num">06</span><svg class="card-icon" viewBox="0 0 24 24"><path d="M3 12l4-4 4 4-4 4-4-4z"/><path d="M13 12l4-4 4 4-4 4-4-4z"/><path d="M9 12h6"/></svg><h3>Arbitration &amp; Mediation</h3><p>Out-of-court resolution for commercial and personal disputes.</p></div>
+        <div class="card glass reveal"><span class="num">07</span><svg class="card-icon" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M2 13h20"/><path d="M2 13l1 7h18l1-7"/><line x1="12" y1="6" x2="12" y2="2"/></svg><h3>Labour &amp; Employment Law</h3><p>Advisory and representation for employers and employees alike.</p></div>
+        <div class="card glass reveal"><span class="num">08</span><svg class="card-icon" viewBox="0 0 24 24"><line x1="3" y1="21" x2="21" y2="21"/><line x1="4" y1="10" x2="20" y2="10"/><path d="M4 10l8-6 8 6"/><line x1="6" y1="10" x2="6" y2="18"/><line x1="10" y1="10" x2="10" y2="18"/><line x1="14" y1="10" x2="14" y2="18"/><line x1="18" y1="10" x2="18" y2="18"/></svg><h3>Banking &amp; Recovery Law</h3><p>Loan recovery, NPA matters and proceedings before debt recovery tribunals.</p></div>
+        <div class="card glass reveal"><span class="num">09</span><svg class="card-icon" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3 11.2V16h6v-1.8A6 6 0 0 0 12 3z"/></svg><h3>Intellectual Property Rights</h3><p>Trademark, copyright and patent filing, protection and infringement disputes.</p></div>
+        <div class="card glass reveal"><span class="num">10</span><svg class="card-icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M12 8v4"/><circle cx="12" cy="15" r="0.6" fill="currentColor" stroke="none"/></svg><h3>Consumer Protection</h3><p>Representation before consumer forums for goods, services and builder disputes.</p></div>
       </div>
 
       <div class="section-head reveal">
@@ -678,7 +682,7 @@
         <a data-target="practice">Corporate &amp; Commercial Law</a>
         <a data-target="practice">Property &amp; Real Estate Law</a>
         <a data-target="practice">Family &amp; Matrimonial Law</a>
-        <a data-target="practice">Intellectual Property Rights (IPR)</a>
+        <a data-target="practice">Intellectual Property Rights</a>
         <a data-target="practice">Arbitration &amp; Mediation</a>
         <a data-target="practice">Labour &amp; Employment Law</a>
         <a data-target="practice">Banking &amp; Recovery Law</a>
