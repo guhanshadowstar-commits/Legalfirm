@@ -23,7 +23,7 @@
   "name": "Prudent Legal Services",
   "founder": { "@type": "Person", "name": "K. Shankar", "jobTitle": "Advocate" },
   "areaServed": "Chennai, Tamil Nadu, India",
-  "address": { "@type": "PostalAddress", "addressLocality": "Chennai", "addressRegion": "Tamil Nadu", "addressCountry": "IN" },
+  "address": { "@type": "PostalAddress", "streetAddress": "1st Floor, Sony Nagar, Old No. 32A, New No. 168, Gandhi Road, Velachery", "addressLocality": "Chennai", "addressRegion": "Tamil Nadu", "postalCode": "600042", "addressCountry": "IN" },
   "description": "Full-service law firm advising on civil, criminal, corporate, family, property and arbitration matters.",
   "priceRange": "$$"
 }
@@ -304,7 +304,10 @@
   .field textarea{ min-height:96px; resize:vertical; }
   .form-note{ font-size:12px; color:var(--ivory-dim); opacity:.7; margin-top:14px; }
 
-  .cal-embed-shell{ margin-top:36px; }
+  .map-embed{ margin-top:30px; border-radius:14px; overflow:hidden; border:1px solid var(--glass-border); }
+  .map-embed iframe{ width:100%; height:240px; border:0; display:block; filter:grayscale(.25) contrast(1.05); }
+
+  .cal-embed-shell{ margin-top:24px; }
   .cal-embed-box{
     border:1px dashed var(--glass-border); border-radius:14px; padding:36px 24px; text-align:center;
     color:var(--ivory-dim); font-size:12px;
@@ -611,8 +614,13 @@
           <div class="contact-detail">
             <div><span>Email</span>info@prudentlegal.example</div>
             <div><span>Phone</span>+91 00000 00000</div>
-            <div><span>Office</span>Chennai, Tamil Nadu</div>
+            <div><span>Office</span>1st Floor, Sony Nagar, Old No. 32A, New No. 168, Gandhi Road, Velachery, Chennai, Tamil Nadu 600042</div>
             <div><span>Hours</span>Mon – Sat, 10:00 – 18:00</div>
+          </div>
+          <div class="map-embed reveal">
+            <iframe
+              src="https://maps.google.com/maps?q=1st%20Floor%2C%20Sony%20Nagar%2C%20Old%20No.%2032A%2C%20New%20No.%20168%2C%20Gandhi%20Road%2C%20Velachery%2C%20Chennai%2C%20Tamil%20Nadu%20600042&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Office location map"></iframe>
           </div>
           <!-- Cal.com embed placeholder: paste the Cal inline-embed <script> + this div's matching config here once available -->
           <div class="cal-embed-shell reveal" id="calEmbedSlot">
@@ -685,7 +693,7 @@
         <h4>Contact</h4>
         <a href="mailto:info@prudentlegal.example">info@prudentlegal.example</a>
         <a href="tel:+910000000000">+91 00000 00000</a>
-        <p>Chennai, Tamil Nadu</p>
+        <p>Velachery, Chennai, Tamil Nadu 600042</p>
       </div>
     </div>
     <div class="footer-bottom">
