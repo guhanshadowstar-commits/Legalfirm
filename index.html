@@ -169,7 +169,7 @@
 
   @media (max-width:760px){
     .brand .sub{ display:none; }
-    .desktop-only-cta{ display:none; }
+    .desktop-only-cta{ display:none !important; }
     .menu-toggle{ display:block; }
     .mobile-only-link{ display:block; }
     .nav-links{
@@ -226,13 +226,21 @@
   }
   .trust-line span{ color:var(--ivory-dim); }
 
+  @media (max-width:480px){
+    .trust-line{
+      display:grid; grid-template-columns:repeat(3,1fr); gap:10px;
+      font-size:10px; max-width:none;
+    }
+    .trust-line div{ text-align:center; }
+    .trust-line span{ display:block; font-size:9px; margin-top:2px; }
+  }
+
   .cta-banner{ margin-top:90px; padding:54px 50px; display:flex; align-items:center; justify-content:space-between; gap:30px; flex-wrap:wrap; }
   .cta-banner h3{ font-size:1.5rem; max-width:460px; }
 
   /* ---------- Cards / Practice grid ---------- */
   .card-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:110px; }
   @media (max-width:920px){ .card-grid{ grid-template-columns:repeat(2,1fr); } }
-  @media (max-width:620px){ .card-grid{ grid-template-columns:1fr; } }
 
   .card{ padding:34px 28px; transition:transform .25s var(--ease), border-color .25s; transform-style:preserve-3d; will-change:transform; }
   .card:hover{ border-color:var(--gold-dim); }
@@ -244,6 +252,14 @@
   }
   .card h3{ font-size:1.18rem; font-weight:500; margin-bottom:10px; }
   .card p{ font-size:16px; color:var(--ivory-dim); }
+
+  @media (max-width:620px){
+    .card-grid{ grid-template-columns:repeat(2,1fr); gap:14px; margin-bottom:70px; }
+    .card{ padding:20px 16px; }
+    .card-icon{ width:30px; height:30px; margin:10px 0 12px; }
+    .card h3{ font-size:1rem; margin-bottom:8px; }
+    .card p{ font-size:14px; line-height:1.5; }
+  }
 
 
   /* ---------- About ---------- */
@@ -326,6 +342,7 @@
   footer{ position:relative; z-index:10; border-top:1px solid var(--glass-border); padding:64px 0 100px; }
   .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:54px; }
   @media (max-width:860px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .footer-grid{ grid-template-columns:1fr; } }
   .footer-col h4{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
   .footer-col a, .footer-col p{ display:block; font-size:16px; color:var(--ivory-dim); margin-bottom:10px; cursor:pointer; }
   .footer-col a:hover{ color:var(--gold-bright); }
