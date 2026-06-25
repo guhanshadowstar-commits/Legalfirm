@@ -124,12 +124,11 @@
     display:none; position:absolute; top:4%; right:-10%; width:104px; height:104px; border-radius:50%;
     align-items:center; justify-content:center; text-align:center;
     font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:.1em; color:var(--gold-bright);
-    animation:spin-slow 28s linear infinite;
   }
   .justice-anchor[data-page="home"] .seal-badge{ display:flex; }
-  .seal-badge .ring{ position:absolute; inset:6px; border:1px dashed var(--glass-border); border-radius:50%; }
+  .seal-badge .ring{ position:absolute; inset:6px; border:1px dashed var(--glass-border); border-radius:50%; animation:spin-slow 28s linear infinite; }
   @keyframes spin-slow{ to{ transform:rotate(360deg); } }
-  @media (prefers-reduced-motion: reduce){ .seal-badge{ animation:none; } }
+  @media (prefers-reduced-motion: reduce){ .seal-badge .ring{ animation:none; } }
 
   @media (max-width:820px){
     .justice-layer{ align-items:flex-start; justify-content:flex-end; padding:84px 12px 0 0; }
