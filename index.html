@@ -281,8 +281,7 @@
   /* ---------- Associate Advocates ---------- */
   .team-note{ max-width:640px; margin-bottom:50px; }
   .team-note p{ color:var(--ivory-dim); font-size:17px; }
-  .team-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:60px; }
-  @media (max-width:920px){ .team-grid{ grid-template-columns:repeat(2,1fr); } }
+  .team-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:22px; max-width:760px; margin-bottom:60px; }
   @media (max-width:620px){ .team-grid{ grid-template-columns:1fr; } }
   .team-card{ padding:30px 26px; text-align:center; transition:transform .25s var(--ease), border-color .25s; }
   .team-card:hover{ border-color:var(--gold-dim); transform:translateY(-4px); }
@@ -583,22 +582,15 @@
       <div class="team-note reveal">
         <p>Prudent Legal Services is supported by a team of associate advocates covering litigation, corporate advisory and family law. Photos and detailed profiles will be added shortly — placeholders below are ready to be replaced with your team's portraits and bios.</p>
       </div>
-      <!-- TODO: replace placeholder photo divs with <img src="..." alt="Associate name"> once portraits are supplied -->
       <div class="team-grid">
         <div class="team-card glass reveal">
-          <div class="team-photo" aria-hidden="true">AA</div>
-          <h3>Associate Advocate</h3>
-          <span class="role-tag">Civil &amp; Property Law</span>
-          <p>Profile and photograph to be added.</p>
-        </div>
-        <div class="team-card glass reveal">
-          <div class="team-photo" aria-hidden="true">AD</div>
+          <div class="team-photo"><img src="dhamodaran.jpeg" alt="A. Dhamodaran"></div>
           <h3>A. Dhamodaran</h3>
           <span class="role-tag">Associate Advocate</span>
           <p>B.A., B.L. (Hons.), M.L. (Criminal Law), B.Sc. (Psychology), MBA</p>
         </div>
         <div class="team-card glass reveal">
-          <div class="team-photo" aria-hidden="true">AA</div>
+          <div class="team-photo"><img src="athishayaa.jpeg" alt="A. Athishayaa"></div>
           <h3>A. Athishayaa</h3>
           <span class="role-tag">Advocate &amp; Commissioner of Oaths</span>
           <p>Associate Advocate, Prudent Legal Services</p>
